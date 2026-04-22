@@ -20,18 +20,19 @@ def home():
     drinks = response.json()
     return render_template("home.html", drinks=drinks)
 
-@app.rout('/login')
+@app.route('/login')
 
-@app.rout('/user/<username>')
+
+@app.route('/user/<username>')
 def show_user_profile(username):
 
-@app.rout('/itinerary')
+@app.route('/itinerary')
 
-@app.rout('/itinerary/<int:itinerary_id>')
+@app.route('/itinerary/<int:itinerary_id>')
 
-@app.rout('/budget')
+@app.route('/budget')
 
-@app.rout('/map')
+@app.route('/map')
 
 
 if __name__ == "__main__":
